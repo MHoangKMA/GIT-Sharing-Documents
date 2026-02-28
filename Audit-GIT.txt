@@ -1,0 +1,115 @@
+🧠 PHẦN 1: CÂU HỎI LÝ THUYẾT
+A. Cơ bản
+
+Git là gì? Git khác gì với GitHub?
+Sự khác nhau giữa git init và git clone?
+Vùng Working Directory, Staging Area và Repository khác nhau thế nào?
+git add . khác gì git add -A?
+git commit dùng để làm gì?
+HEAD trong Git là gì?
+Sự khác nhau giữa branch và tag?
+git fetch khác gì git pull?
+Khi nào nên dùng git stash?
+File .gitignore có tác dụng gì?
+
+B. Trung cấp
+
+Giải thích fast-forward merge.
+Merge conflict xảy ra khi nào?
+Rebase là gì? Khác gì với merge?
+Sự khác nhau giữa git reset --soft, --mixed, --hard?
+git revert khác gì git reset?
+Detached HEAD là gì?
+Cherry-pick dùng để làm gì?
+Fork khác clone thế nào?
+Upstream branch là gì?
+Submodule là gì?
+
+C. Nâng cao
+
+Git lưu trữ dữ liệu theo cách nào?
+Git object gồm những loại nào?
+Reflog là gì?
+Squash commit là gì? Khi nào nên dùng?
+Git hook là gì?
+Khi nào nên dùng rebase và khi nào không nên?
+Mô tả Git Flow.
+Mô tả mô hình Trunk-based development.
+Làm sao khôi phục commit đã bị xóa?
+Giải thích nguyên lý 3-way merge.
+
+🔍 PHẦN 2: CÂU HỎI TÌNH HUỐNG
+
+Bạn đã commit nhưng quên thêm một file. Làm sao sửa?
+Bạn commit sai message. Làm sao đổi lại?
+Bạn lỡ git push code lỗi lên main. Xử lý thế nào?
+Bạn đang làm dở nhưng cần chuyển sang branch khác gấp.
+Bạn xóa nhầm branch local.
+Remote có commit mới nhưng bạn chưa muốn merge ngay.
+Hai người cùng sửa một file và bị conflict.
+Bạn muốn gộp 5 commit thành 1 commit.
+Lỡ dùng git reset --hard và mất code.
+Bạn muốn lấy 1 commit từ branch A sang branch B nhưng không merge toàn bộ branch.
+
+💻 PHẦN 3: BÀI THỰC HÀNH
+🟢 Bài 1 – Cơ bản (30 phút)
+Yêu cầu:
+
+Tạo repository mới.
+Tạo file index.html, style.css
+Commit với message đúng chuẩn.
+Tạo branch feature/header
+Thêm nội dung mới và commit.
+Merge vào main.
+Đẩy lên remote GitHub.
+
+Chấm điểm:
+
+Có đúng flow không?
+Có commit message rõ ràng không?
+
+🟡 Bài 2 – Conflict Simulation
+Cho 2 branch:
+
+main
+feature/login
+
+Yêu cầu:
+
+Cả hai branch chỉnh sửa cùng 1 file.
+Tạo conflict.
+Giải quyết conflict.
+Commit lại đúng chuẩn.
+
+🟠 Bài 3 – Rebase Challenge
+
+Tạo 5 commit nhỏ.
+Dùng interactive rebase để:
+
+   * Đổi thứ tự commit
+   * Squash 2 commit
+   * Đổi message commit
+
+Push lên remote (force push đúng cách).
+
+🔴 Bài 4 – Git Debugging
+Giả lập:
+
+Bạn lỡ xóa branch.
+Lỡ reset hard.
+Lỡ push sai.
+
+Yêu cầu:
+Khôi phục lại trạng thái trước đó bằng reflog.
+
+🟣 Bài 5 – Team Workflow
+Chia lớp thành nhóm 3 người.
+Yêu cầu:
+
+Mỗi người tạo 1 branch riêng.
+Làm feature khác nhau.
+Tạo Pull Request.
+Review code lẫn nhau.
+Merge đúng quy trình.
+
+
